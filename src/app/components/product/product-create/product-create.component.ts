@@ -3,17 +3,22 @@ import { ProductsService } from '../products.service';
 import { MatButtonModule } from '@angular/material/button';
 import { Router } from '@angular/router';
 import { Product } from '../product.module';
+import {MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-product-create',
-  imports: [MatButtonModule],
-  templateUrl: './product-create.component.html',
+  imports: [MatCardModule, MatButtonModule, CommonModule, FormsModule, MatInputModule, MatFormFieldModule],
+    templateUrl: './product-create.component.html',
   styleUrl: './product-create.component.css'
 })
 export class ProductCreateComponent {
 
   product: Product = {
-    name: 'Product Name',
+    name:  'Flavio Santos',
     price: 100
   };
 
