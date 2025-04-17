@@ -1,0 +1,16 @@
+.edit{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit > i {
+  color: #007bff;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.delete > i {
+  color: #dc3545;
+}
