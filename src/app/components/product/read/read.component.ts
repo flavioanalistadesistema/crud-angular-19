@@ -25,7 +25,13 @@ export class ReadComponent implements OnInit {
     this.productService.read().subscribe((products) => {
       this.products = products;
       console.log(this.products, 'products');
-    });
-    
+    });        
   }
+
+  deleteProduct(id: string) {
+    this.productService.delete(id).subscribe(() => {
+      this.productService.msgProduct('Produto deletado com sucesso!');
+      this.products = this.products.filter((product) => product.id !== id);
+    });
+  }  
 }

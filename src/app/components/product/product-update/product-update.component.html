@@ -1,1 +1,21 @@
-<p>product-update works!</p>
+<mat-card>
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <mat-label>Produto</mat-label>
+            <input matInput placeholder="Digite o nome do Produto" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Preco (R$)</mat-label>
+            <input type="number" matInput placeholder="Ex. 25.5" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+    <div class="button-card">
+        <button mat-raised-button (click)="updateProduct()" color="primary">
+            Alterar
+        </button>    
+        <button mat-raised-button (click)="cancelProduct()">
+            Cancelar
+        </button>
+    </div>
+</mat-card>

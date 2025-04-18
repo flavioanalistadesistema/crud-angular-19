@@ -10,19 +10,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product.module';
 
 @Component({
-  selector: 'app-product-update',
+  selector: 'app-product-delete',
   imports: [MatCardModule, MatButtonModule, CommonModule, FormsModule, MatInputModule, MatFormFieldModule],
-  templateUrl: './product-update.component.html',
-  styleUrl: './product-update.component.css'
+  templateUrl: './product-delete.component.html',
+  styleUrl: './product-delete.component.css'
 })
-export class ProductUpdateComponent implements OnInit{
+export class ProductDeleteComponent implements OnInit{
   product: Product = { name: '', price: 0 }
 
   constructor(
     private productsService: ProductsService,
     private router: Router,
-    private route: ActivatedRoute    
-  ) { }
+    private route: ActivatedRoute
+  ){}  
   
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
@@ -31,17 +31,24 @@ export class ProductUpdateComponent implements OnInit{
         this.product = product;
       });
     }
-  }
+   }
 
-  updateProduct() {
-    this.productsService.update(this.product).subscribe(() => {
-      this.productsService.msgProduct(`Produto ${this.product.name} atualizado com successo!`);
-      this.router.navigate(['/products']);
-    });
-  }
+   deleteProduct() {
+    const id = this.product.id;
+    if (id) {
+      this.productsService.delete(id).subscribe(() => {
+        this.productsService.msgProduct(`Produto ${this.product.name} deletado com sucesso!`);
+        this.router.navigate(['/products']);
+      });
+    }
+   }
 
-  cancelProduct() {
+   cancelProduct() {
     this.router.navigate(['/products']);
-  }
+   }
+
+   navigateToProducts() {
+    this.router.navigate(['/products']);
+   }
 
 }
