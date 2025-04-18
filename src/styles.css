@@ -13,3 +13,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-mmiddle {
   vertical-align: middle;
 }
+
+.sucess-snack {
+  background-color: #4caf50 !important; /* Cor de fundo */
+  color: #ffffff;
+  padding: 16px; /* Espaçamento interno */
+}
+
+.error-snack {
+  background-color: #f44336 !important; /* Cor de fundo */
+  color: #ffffff;
+  padding: 16px; /* Espaçamento interno */
+}
