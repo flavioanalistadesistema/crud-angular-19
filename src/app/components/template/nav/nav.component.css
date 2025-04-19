@@ -16,5 +16,9 @@
 .nav-content {
     padding: 20px;
     background-color: #fff;
+}      
+
+.nav-sidenav {
+    background-color: #000;
+    color: #333;
 }
-      

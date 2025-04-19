@@ -10,3 +10,45 @@
     padding: 1rem;
 }
 
+.card-content {
+    padding: 1rem;
+}
+
+.card-home .card-content .card-list-group {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-home .card-content .card-list-group .card-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.card-home .card-content .card-list-group .card-list-group-item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.card-home .card-content .card-list-group-item-links {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+.card-home .card-content .card-list-group-item-links a {
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+

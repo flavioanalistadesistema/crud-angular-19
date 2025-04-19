@@ -2,13 +2,40 @@
     <mat-card-header>
         <mat-card-title class="card-title">Bem vindo!</mat-card-title>
     </mat-card-header>
-        <mat-card-subtitle class="card-subtitle">
-            Sistema para simplificar a construção de um sistema em Angular
-        </mat-card-subtitle>
-    <ul>
-        <li *myFor="let n em [1,2,3]">
-            {{n}}
-        </li>
-    </ul>
+    <mat-card-subtitle class="card-subtitle">
+        Desenvolvido a carter de ESTUDO!
+    </mat-card-subtitle>
+    <mat-card-content class="card-content">
+        <p>Esse sistema foi desenvolvido para fins educacionais, com o intuito de demonstrar a construção de um sistema em Angular.</p>
+        <p>O sistema é composto por um CRUD de produtos, onde é possível criar, ler, atualizar e deletar produtos.</p>            
+        
+        <div class="card-list-group">
+            <div class="card-list-group-item">
+                <span class="card-subtitle">Tecnologias utilizadas:</span>
+                <ul class="card-list">
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Material Design</li>
+                </ul>
+            </div>                
 
+            <div class="card-list-group-item">
+                <span class="card-subtitle">API utilizada:</span>
+                <ul class="card-list">
+                    <li>json-server</li>
+                </ul>   
+            </div>
+
+        </div>        
+        <div class="card-list-group-item-links">
+            <span class="card-links">
+                <a href="https://github.com/flavioanalistadesistema/crud-angular-19/tree/main">Repositório Front-end</a>        
+            </span>
+            <span class="card-links">
+                <a href="https://github.com/flavioanalistadesistema/crud-angular-19/tree/main">Repositório Back-end</a>        
+            </span>            
+        </div>
+    </mat-card-content>                
 </mat-card>
