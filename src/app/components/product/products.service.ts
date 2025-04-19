@@ -8,8 +8,8 @@ import { catchError, EMPTY, map, Observable } from 'rxjs';
   providedIn: 'root'  
 })
 export class ProductsService {
-
-  baseUrl = 'http://localhost:3001/products';
+  // baseUrl = `${environment.apiUrl}`;
+  baseUrl = 'https://backend-json-server.onrender.com/cursos';
 
   constructor(
     private snackBar: MatSnackBar,
