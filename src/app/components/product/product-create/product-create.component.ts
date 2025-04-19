@@ -18,9 +18,8 @@ import { FormsModule } from '@angular/forms';
 export class ProductCreateComponent {
 
   product: Product = {
-    name:  'Flavio Santos',
-    price: 100
-  };
+    name:  '',
+    price: 0  };
 
   constructor(
     private productsService: ProductsService,
