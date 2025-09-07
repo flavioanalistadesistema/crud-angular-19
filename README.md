@@ -28,6 +28,9 @@ src/
 └── environments/        # Configurações por ambiente (dev/prod)
 ```
 
+## Tela Principal - /Home
+![alt text](image.png)
+
 ---
 
 ## ⚖️ Como Rodar o Projeto
